@@ -6,22 +6,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_selection import SelectKBest
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.svm import SVC
-#NOTE: This code is just a quick and dirty proof of concept. Our implimentation in the paper is completely different
-
-# def root_directory():
-#     current_path = os.path.abspath(__file__)
-#     return os.path.abspath(os.path.join(current_path, os.pardir))
-# def data_directory():
-#     return os.path.join(root_directory(), "data")
-
-# def load_train_set():
-#     #Loading a hdf5 file is much much faster
-#     in_file = os.path.join(data_directory(), "final",  "train.csv")
-#     return pd.read_csv(in_file)
-# def load_test_set():
-#     #Loading a hdf5 file is much much faster
-#     in_file = os.path.join(data_directory(), "final",  "test.csv")
-#     return pd.read_csv(in_file)
 
 def simple_model_evaluation():
     select = SelectKBest(k=20)
@@ -61,7 +45,6 @@ def simple_model_evaluation():
     
      
 if __name__ == '__main__':
-    #NOTE: This code is just a quick and dirty proof of concept. 
-    #Our implimentation in the paper is completely different
+    #NOTE: This code is just a simple and quick proof of concept and to show the dataset works!
     simple_model_evaluation()
     
